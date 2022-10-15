@@ -4,7 +4,7 @@
   <img width="900" src="https://user-images.githubusercontent.com/48625700/195993069-9322758b-cd21-4a67-b39f-400721a874c4.png">
 </p>
 
-This repository contains the solution for the challenges and case studies in **[XPe bootcamp](https://www.xpeducacao.com.br/bootcamp/engenheiro-de-dados-cloud)**!
+This repository contains the solutions for the challenges and case studies in **[XPe bootcamp](https://www.xpeducacao.com.br/bootcamp/engenheiro-de-dados-cloud)**!
 
 ## Modules
 
