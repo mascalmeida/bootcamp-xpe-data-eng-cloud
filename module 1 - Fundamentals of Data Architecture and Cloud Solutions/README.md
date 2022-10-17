@@ -1,4 +1,4 @@
-# Annotations
+# Annotations 📜✍️
 
 ## Chapter 1 - Fundamentals of Data Architecture
 ### 1.1 - Why cloud?
