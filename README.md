@@ -13,6 +13,7 @@ This repository contains the solutions for the challenges and case studies in **
 **Main concepts:**
 
 - Well-Architected Framework
+- Database as a Service (DaaS) Relational & Non-relational
 
 **Main tools:** 
 
