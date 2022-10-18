@@ -7,7 +7,7 @@ The main difference between on-premises architecture and cloud architecture is t
 
 - On-premises: Using on-premises we have to buy resources based on predictions and in a good prediction case, a lot of resources will be less useful for some time, in a bad prediction case the resources won’t be enough to attend to the demand.
 - Cloud architecture (pay-as-you-go): In a cloud architecture case is possible to buy just the resources that are needed for each situation, in a simple and small project that uses few resources you will pay only for those few resources, if this project became a big one, you don’t need to wait to buy and implement new resources, the cloud elasticity allows to expand the project in a dynamic way.
-- IaaS x PaaS x SaaS: IaaS is Virtual Machines; PaaS is SQL Databases; SaaS is Gmail;
+- IaaS x PaaS x SaaS: IaaS is Virtual Machine; PaaS is SQL Database; SaaS is Gmail;
 
 ### 1.2 - Well-Architected Framework
 
