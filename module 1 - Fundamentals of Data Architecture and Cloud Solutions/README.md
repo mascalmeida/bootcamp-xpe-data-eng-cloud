@@ -45,6 +45,47 @@ The main idea here is to choose the resources with minor prices that create valu
 
 ## Chapter 2 - Data Architecture Models on Cloud
 
+### 2.1 - DaaS Database as a Service (Relational)
+
+- AWS resources
+    - RDS (Relational Database Service): It is compatible with Oracle, Microsoft SQL Server, MySQL, PostgreSQL, MariaDB, and the AWS serverless option Amazon Aurora.
+    - DW solutions: Amazon Redshift and Amazon Redshift Spectrum.
+- Azure resources
+    - Relational solutions: Azure SQL Database, Azure SQL Server, SQL Server in VM, Azure Database for PostgreSQL Azure Database for MySQL, Azure Database for MariaDB.
+    - DW solutions: Azure SQL Data Warehouse and Azure Synapse Analytics.
+- GCP resources
+    - Relational solutions: Bare Mental Solution, Cloud SQL (it is compatible with MySQL, PostgreSQL, and Microsoft SQL Server), Cloud Spanner (it is compatible with Oracle and DynamoDB).
+    - DW solutions: BigQuery.
+
+### 2.2 - DaaS Database as a Service (Non-relational)
+
+- AWS resources
+    - DynamoDB (key-value)
+    - DocumentDB (it is compatible with MongoDB)
+    - Amazon Neptune (graph)
+    - Amazon Elasticache (database in memory, it is compatible with Memcached and Redis)
+    - Amazon ElasticSearch Service
+- Azure resources
+    - Azure Cosmos DB: it is compatible with key-value, document-oriented, and graph database types
+    - Azure Cache for Redis (database in memory, it is compatible with Redis)
+    - Elastic in Azure (Elastic Search)
+- GCP resources
+    - Cloud BigTable (key-value)
+    - Firestore (document-oriented)
+    - Firebase Realtime Database (document-oriented)
+    - Memorystore (database in memory, it is compatible with Redis and Memcached)
+    - Integration with partners: MongoDB Atlas, Datastax, Redis Labs, Neo4j, and ElasticSearch.
+
+### 2.3 - Data Lake (Architecture Design)
+
+### 2.4 - Data Lake (Storage)
+
+### 2.5 - Data Lake (Data Ingestion)
+
+### 2.6 - Data Lake (Big Data Processing)
+
+### 2.7 - Data Lake (Data Consumption)
+
 ## Chapter 3 - Hands-on
 
 ## Chapter 4 - IaC Infrastructure as Code
