@@ -12,41 +12,41 @@ This repository contains the solutions for the challenges and case studies in **
 
 **Main concepts:**
 
-1. Well-Architected Framework
+- Well-Architected Framework
 
 **Main tools:** 
 
-1. In progress 🚧
+- In progress 🚧
 
 ### [Module 2 - Processing Streaming Data](https://github.com/mascalmeida/bootcamp-xpe-data-eng-cloud/tree/main/module%202%20-%20Processing%20Streaming%20Data)
 
 **Main concepts:**
 
-1. In progress 🚧
+- In progress 🚧
 
 **Main tools:** 
 
-1. In progress 🚧
+- In progress 🚧
 
 ### [Module 3 - Big Data Technologies](https://github.com/mascalmeida/bootcamp-xpe-data-eng-cloud/tree/main/module%203%20-%20Big%20Data%20Technologies)
 
 **Main concepts:**
 
-1. In progress 🚧
+- In progress 🚧
 
 **Main tools:** 
 
-1. In progress 🚧
+- In progress 🚧
 
 ### [Module 4 - Scalable Big Data Architecture](https://github.com/mascalmeida/bootcamp-xpe-data-eng-cloud/tree/main/module%204%20-%20Scalable%20Big%20Data%20Architecture)
 
 **Main concepts:**
 
-1. In progress 🚧
+- In progress 🚧
 
 **Main tools:** 
 
-1. In progress 🚧
+- In progress 🚧
 
 ### [Module 5 - Final Challenge](https://github.com/mascalmeida/bootcamp-xpe-data-eng-cloud/tree/main/module%205%20-%20Final%20Challenge)
 
