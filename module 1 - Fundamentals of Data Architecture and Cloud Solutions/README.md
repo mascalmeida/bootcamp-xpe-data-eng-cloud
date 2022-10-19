@@ -78,6 +78,30 @@ The main idea here is to choose the resources with minor prices that create valu
 
 ### 2.3 - Data Lake (Architecture Design)
 
+- Lambda Architecture: what defines this architecture is the existence of two layers, the batch layer, and the speed layer. Both layers work in parallel, the batch layer works with data batches and the speed layer works in real-time or near-real-time. It is important to cite the serving layer too, it is the layer of data consumption that receives that from the batch layer.
+    - Advantages: it is helpful for attending requirements that have these two necessities (historical data and real-time data)
+    - Disadvantages: The simultaneous processing usually requires a lot of data storage and sometimes causes duplicates
+
+<p align="center">
+  <img width="600" src="https://user-images.githubusercontent.com/48625700/196685326-f02ae667-e64e-4bb1-bfd1-5caa3d57cafe.png">
+</p>
+
+- Kappa Architecture: this architecture has only one layer, that calls Data Processing Layer. This unique layer is a kind of speed layer, that works in real-time or near-real-time, but also works with batches. So, it solves the problem of duplicates that the Lambda architecture has.
+    - Advantages: it avoids duplicates and reduces the data storage space (when we compare it with Lambda architecture)
+    - Disadvantages: the architecture is hard to be implemented especially for the data reprocessing of streaming
+
+<p align="center">
+  <img width="650" src="https://user-images.githubusercontent.com/48625700/196685419-d314b93e-fb68-441a-8bd2-c662d232cc1d.png">
+</p>
+
+- Unifield Architecture: it is very similar to Lambda architecture, the novelty here is that the machine learning layer is combined with the speed layer.
+    - Advantages: the possibility to create real-time machine learning can offer a lot of insights for the users
+    - Disadvantages: it is more complex to be implemented
+
+<p align="center">
+  <img width="600" src="https://user-images.githubusercontent.com/48625700/196685477-739ac305-b72e-4389-a3d6-afab97b290fc.jpeg">
+</p>
+
 ### 2.4 - Data Lake (Storage)
 
 ### 2.5 - Data Lake (Data Ingestion)
