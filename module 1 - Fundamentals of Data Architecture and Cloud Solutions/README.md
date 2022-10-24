@@ -153,7 +153,7 @@ Amazon S3 (Simple Storage Service) is the main storage solution in AWS. The main
         - BigQuery
     - Databricks
 
-### 2.7 - Data Lake (Data Consumption)
+### 2.7 - Data Lake (Data Consumption - DW & Engines)
 
 - Managed engines:
     - AWS:
