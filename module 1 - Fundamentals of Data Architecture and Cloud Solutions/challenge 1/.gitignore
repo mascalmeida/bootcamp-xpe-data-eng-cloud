@@ -1,3 +1,3 @@
 # Bucket files
-/data/bucket/raw-data/MICRODADOS_ENEM_2020.csv
-#/data/bucket/consumer-zone/
+/data/bucket/raw-data/
+/data/bucket/consumer-zone/
