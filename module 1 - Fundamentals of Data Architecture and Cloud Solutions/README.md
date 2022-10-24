@@ -102,13 +102,71 @@ The main idea here is to choose the resources with minor prices that create valu
   <img width="600" src="https://user-images.githubusercontent.com/48625700/196685477-739ac305-b72e-4389-a3d6-afab97b290fc.jpeg">
 </p>
 
-### 2.4 - Data Lake (Storage)
+- Lakehouse Architecture: it is a modern structure that allows flexibility, cost optimization, and scalability for the Data Lake, besides that it also brings ACID operations that are common in relational databases. Data Lakehouse is the mix between Data Lake and Data Warehouse, it gets the best from these two architectures to create a new one.
+    - Main tools: delta lake + query engines
+    
+<p align="center">
+  <img width="600" src="https://user-images.githubusercontent.com/48625700/197502558-044519b0-dec1-45b2-ad21-465b5a0913cd.png">
+</p>
+
+### 2.4 - Data Lake (Storage - Amazon S3)
+
+Amazon S3 (Simple Storage Service) is the main storage solution in AWS. The main features are:
+
+- Volume limit: limitless. There is just a limit for each object, and each one has to have up to 5 TB.
+- Durability: 11 nines (99,999999999%)
+- Replication: it does automatic replication for all objects in all disponibility zones of the region. We only need to choose the region.
+- Costs: it has the pay-as-you-go model.
+    - Pay:
+        1. GBs per month; 
+        2. Data traffic for other regions or out of AWS;
+        3. Queries PUT, COPY, POST, LIST, and GET;
+    - Non-pay:
+        1. Data traffic to put data into S3;
+        2. Data traffic for AWS services at the same region;
 
 ### 2.5 - Data Lake (Data Ingestion)
 
+- Batch ingestion: Spark; Python; Apache Nifi;
+- Real-time: Kafka (near real-time);
+- Managed Services:
+    - AWS: DMS (Database Migration Service); Amazon Kinesis;
+    - GCP: Google PubSub;
+    - Azure: Azure EventHub;
+
 ### 2.6 - Data Lake (Big Data Processing)
 
+- Open source tools:
+    - Apache Spark (Batch and Real-time)
+    - ksqlDB (Kafka - Real-time)
+- Managed tools:
+    - AWS:
+        - EMR: it is a PaaS service that is compatible with Hadoop, Spark, Hive, and others;
+        - Glue Job: it is a SaaS service that uses mainly spark;
+        - Kinesis Data Analytics: a resource for data streaming solution (it seems Kafka);
+    - Azure:
+        - HD Insight: batch and real-time processing;
+        - Azure Stream Analytics: data streaming solution (it seems Kafka);
+    - Google Cloud:
+        - Dataproc;
+        - Pub/Sub;
+        - BigQuery
+    - Databricks
+
 ### 2.7 - Data Lake (Data Consumption)
+
+- Managed engines:
+    - AWS:
+        - Amazon Athena (it is combined with Glue Data Catalog);
+    - Azure:
+        - Azure Data Lake Analytics;
+    - Google Cloud:
+        - BigQuery is a DW service, but it is the nearest resource that GCP has
+- Non-managed engines:
+    - Presto;
+    - Trino;
+    - Apache Drill;
+    - Dremio;
 
 ## Chapter 3 - Hands-on
 
