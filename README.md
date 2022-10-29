@@ -15,10 +15,14 @@ This repository contains the solutions for the challenges and case studies in **
 - Well-Architected Framework
 - Database as a Service (DaaS) Relational & Non-relational
 - Data Lake Architectures (Lambda, Kappa, Unifield, Lakehouse)
+- Infrastructure as a Code (IaC)
 
 **Main tools:** 
 
-- In progress 🚧
+- [Amazon S3](https://aws.amazon.com/s3/)
+- [AWS Athena](https://aws.amazon.com/athena/)
+- [Spark](https://spark.apache.org/)
+- [Terraform](https://www.terraform.io/)
 
 ### [Module 2 - Processing Streaming Data](https://github.com/mascalmeida/bootcamp-xpe-data-eng-cloud/tree/main/module%202%20-%20Processing%20Streaming%20Data)
 
