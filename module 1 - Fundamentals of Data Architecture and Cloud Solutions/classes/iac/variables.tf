@@ -11,7 +11,7 @@ variable "area" {
 }
 
 variable "by" {
-  default = "tf"
+  default = "tf_github"
 }
 
 variable "provider_region" {
