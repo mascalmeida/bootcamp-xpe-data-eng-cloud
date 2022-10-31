@@ -13,9 +13,9 @@ echo -e "\n>> create the plan to deploy <<<\n"
 terraform plan
 ## apply the terraform code to create the strucutre
 echo -e "\n>> apply the terraform code to create the strucutre <<<\n"
-terraform apply
+terraform apply -auto-approve
 ## destroy (delete) everything
 echo -e "\n>> destroy (delete) everything <<<\n"
-terraform destroy
+terraform destroy -auto-approve
 
 echo -e "\n>> finish... bye-bye <<<"
