@@ -30,3 +30,12 @@ resource "aws_s3_bucket_object" "spark_code_ch1" {
 provider "aws" {
   region = var.provider_region
 }
+
+# Centralized the Terraform control state file
+terraform {
+  backend "s3" {
+    bucket = "terraform-state-mascalmeida"
+    key = "state/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
