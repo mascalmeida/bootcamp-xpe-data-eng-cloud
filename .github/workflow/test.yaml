@@ -1,12 +1,12 @@
-name: deploy
+name: test on pr
 
 on:
-  push:
+  pull_request:
     branches: [main]
 
 jobs: 
-  deploy:
-    name: deploy to datalake
+  test:
+    name: test infra on pr
       runs-on: ubuntu-latest
 
       steps:
@@ -46,8 +46,8 @@ jobs:
           echo -e "\n>> create the plan to deploy <<<\n"
           $COMMAND_IAC plan
           ## apply the terraform code to create the strucutre
-          echo -e "\n>> apply the terraform code to create the strucutre <<<\n"
-          $COMMAND_IAC apply -auto-approve
+          #echo -e "\n>> apply the terraform code to create the strucutre <<<\n"
+          #$COMMAND_IAC apply -auto-approve
           ## destroy (delete) everything
           #echo -e "\n>> destroy (delete) everything <<<\n"
           #$COMMAND_IAC destroy -auto-approve
