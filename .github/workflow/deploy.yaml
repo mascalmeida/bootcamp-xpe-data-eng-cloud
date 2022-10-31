@@ -1,0 +1,54 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs: 
+  deploy:
+    name: deploy to datalake
+      runs-on: ubuntu-latest
+
+      steps:
+      - uses: actions/checkout@v2
+
+      - name: set up python 3.8
+        uses: actions/steup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: harshicorp - setup terraform
+        uses: harshicorp/setup-terraform@v1.2.1
+
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ""
+          aws-secret-access-key: ""
+          aws-region: us-east-1
+
+      - name: iac apply
+        env:
+          COMMAND_IAC: terraform
+        run:
+          cd "module 1 - Fundamentals of Data Architecture and Cloud Solutions/classes/iac"
+          # Script to run the terraform solution
+          ## terraform initialization
+          echo -e ">> terraform initialization <<<\n"
+          $COMMAND_IAC init
+          ## format the terraform structure
+          echo -e "\n>> format the terraform structure <<<\n"
+          $COMMAND_IAC fmt
+          ## validate the terraform code
+          echo -e "\n>> validate the terraform code <<<\n"
+          $COMMAND_IAC validate
+          ## create the plan to deploy
+          echo -e "\n>> create the plan to deploy <<<\n"
+          $COMMAND_IAC plan
+          ## apply the terraform code to create the strucutre
+          echo -e "\n>> apply the terraform code to create the strucutre <<<\n"
+          $COMMAND_IAC apply -auto-approve
+          ## destroy (delete) everything
+          #echo -e "\n>> destroy (delete) everything <<<\n"
+          #$COMMAND_IAC destroy -auto-approve
+          echo -e "\n>> finish... bye-bye <<<"
