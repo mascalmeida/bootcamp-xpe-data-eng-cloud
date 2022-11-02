@@ -53,12 +53,12 @@ file_name_list = [
 bucket_name = "datalake-masca-md1-challenge2-tf"
 
 object_name_list = [
-    "RAIS_VINC_PUB_CENTRO_OESTE.parquet", 
-    "RAIS_VINC_PUB_MG_ES_RJ.parquet", 
-    "RAIS_VINC_PUB_NORDESTE.parquet",
-    "RAIS_VINC_PUB_NORTE.parquet", 
-    "RAIS_VINC_PUB_SP.parquet", 
-    "RAIS_VINC_PUB_SUL.parquet"
+    "RAIS_VINC_PUB_CENTRO_OESTE.txt", 
+    "RAIS_VINC_PUB_MG_ES_RJ.txt", 
+    "RAIS_VINC_PUB_NORDESTE.txt",
+    "RAIS_VINC_PUB_NORTE.txt", 
+    "RAIS_VINC_PUB_SP.txt", 
+    "RAIS_VINC_PUB_SUL.txt"
     ]
 
 for i in range(0, len(file_name_list)):

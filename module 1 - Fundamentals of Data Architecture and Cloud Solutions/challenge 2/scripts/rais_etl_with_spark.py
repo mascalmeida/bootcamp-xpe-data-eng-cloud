@@ -14,14 +14,14 @@ from pyspark.sql import functions as f
 # Extraction ----------------------------------------------------
 # Read data from Amazon S3 bucket
 rais = (
-	spark
-	.read
-	.format("parquet")
-	.option("header", True)
-	.option("inferSchema", True)
-	.option("delimiter", ";")
-    .option("encoding", "latin1")
-	.load("s3://datalake-masca-md1-challenge2-tf/raw/RAIS_VINC_PUB_NORTE")
+    spark
+    .read
+    .csv(
+        "s3://datalake-masca-md1-challenge2-tf/raw/",
+        inferSchema=True, 
+        header=True, 
+        sep=';', 
+        encoding="latin1")
 )
 
 # Transformation ----------------------------------------------------
@@ -115,12 +115,12 @@ rais = (
 )
 
 # Loading ----------------------------------------------------
-# Saving on analytics layer
+## Saving on analytics layer
 (
     rais
     .coalesce(50)
     .write.mode("overwrite")
+    .partitionBy('uf')
     .format("parquet")
-    .partitionBy('ano', 'uf')
-    .save("s3://datalake-masca-md1-challenge2-tf/analytics/RAIS_VINC_PUB_NORTE")
+    .save("s3://datalake-masca-md1-challenge2-tf/analytics/rais/")
 )
