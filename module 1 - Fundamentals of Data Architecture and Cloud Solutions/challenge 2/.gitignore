@@ -1,1 +1,2 @@
-bucket/raw-data/
+# Avoiding versioning the bucket files
+bucket/
