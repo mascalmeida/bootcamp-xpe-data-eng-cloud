@@ -7,7 +7,7 @@ variable "owner" {
 }
 
 variable "goal" {
-  default = "md1_challenge2"
+  default = "md1-challenge2"
 }
 
 variable "by" {

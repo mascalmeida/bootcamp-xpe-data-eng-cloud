@@ -7,8 +7,8 @@ provider "aws" {
 # Centralized the Terraform control state file
 terraform {
   backend "s3" {
-    bucket = "terraform-state-masca"
-    key = "state/terraform.tfstate"
+    bucket = "terraform-state-md1-challenge2"
+    key    = "state/terraform.tfstate"
     region = "us-east-1"
   }
 }
