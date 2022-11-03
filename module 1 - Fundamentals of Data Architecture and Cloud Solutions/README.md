@@ -168,10 +168,21 @@ Amazon S3 (Simple Storage Service) is the main storage solution in AWS. The main
     - Apache Drill;
     - Dremio;
 
-## Chapter 3 - Hands-on
-
 ## Chapter 4 - IaC Infrastructure as Code
 
-## Chapter 5 - Use cases (hands-on)
+### 4.1 - IaC Tools
 
-## Chapter 6 - Review
+- Why IaC?
+    - Automation;
+    - Cycle time: velocity to implement;
+    - Easy replication for other environments (dev, prod, etc);
+    - Reliability: easy and fast to rebuild in a disaster recovery situation;
+- Open-source tools:
+    - Terraform;
+    - Pulimi;
+    - Chef infra;
+    - Puppet;
+- Cloud-based:
+    - AWS CloudFormation;
+    - Azure Resource Manager;
+    - Google Cloud Deployment Manager;
