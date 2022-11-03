@@ -20,7 +20,7 @@ This repository contains the solutions for the challenges and case studies in **
 **Main tools:** 
 
 - [Amazon S3](https://aws.amazon.com/s3/)
-- [AWS Athena](https://aws.amazon.com/athena/)
+- [Amazon EMR](https://aws.amazon.com/emr/)
 - [Spark](https://spark.apache.org/)
 - [Terraform](https://www.terraform.io/)
 
