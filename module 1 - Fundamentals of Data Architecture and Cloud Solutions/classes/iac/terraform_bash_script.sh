@@ -17,5 +17,5 @@ terraform apply -auto-approve
 ## destroy (delete) everything
 echo -e "\n>> destroy (delete) everything <<<\n"
 terraform destroy -auto-approve
-## finish
+
 echo -e "\n>> finish... bye-bye <<<"
