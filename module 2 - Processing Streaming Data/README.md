@@ -40,6 +40,16 @@
 
 ### 1.5. Advantages and Disadvantages of Spark
 
+- Advantages
+    - Performance
+    - Easy to use
+    - Support for many programming languages
+    - Unified platform
+- Disadvantages
+    - Spark isn’t for small datasets (less than dozens of GB)
+    - Spark is designed for many CPUs and memory (in this case Hadoop is better)
+    - Spark isn’t for text mining (elastic search is better for this kind of thing)
+
 ## Chapter 2 - ...
 
 ### 2.1 - 
