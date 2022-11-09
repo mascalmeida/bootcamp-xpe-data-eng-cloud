@@ -28,11 +28,11 @@ This repository contains the solutions for the challenges and case studies in **
 
 **Main concepts:**
 
-- In progress 🚧
+- Distributed Computing
 
 **Main tools:** 
 
-- In progress 🚧
+- [Spark](https://spark.apache.org/)
 
 ### [Module 3 - Big Data Technologies](https://github.com/mascalmeida/bootcamp-xpe-data-eng-cloud/tree/main/module%203%20-%20Big%20Data%20Technologies)
 
