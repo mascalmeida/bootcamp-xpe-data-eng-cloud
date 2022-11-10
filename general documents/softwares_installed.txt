@@ -1,0 +1,4 @@
+softwares installed:
+1. aws cli
+2. Terraform by snap
+3. PySpark by pip install in bootcamp conda env
