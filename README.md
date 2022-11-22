@@ -38,11 +38,12 @@ This repository contains the solutions for the challenges and case studies in **
 
 **Main concepts:**
 
-- In progress 🚧
+- Microservices Architecture
 
 **Main tools:** 
 
-- In progress 🚧
+- [Docker](https://www.docker.com/)
+- [Kubernetes](https://kubernetes.io/)
 
 ### [Module 4 - Scalable Big Data Architecture](https://github.com/mascalmeida/bootcamp-xpe-data-eng-cloud/tree/main/module%204%20-%20Scalable%20Big%20Data%20Architecture)
 
