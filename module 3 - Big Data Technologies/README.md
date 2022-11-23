@@ -23,7 +23,9 @@
   <img width="600" src="https://user-images.githubusercontent.com/48625700/203542477-81e79654-4f36-417c-bff5-783066f35d5b.png">
 </p>
 
-Figure 1 - Virtual Machine and Container Image comparison
+<p align="center">
+  Figure 1 - Virtual Machine and Container Image comparison
+</p>
 
 ### 1.3. Docker: basic commands
 
@@ -63,15 +65,23 @@ Google created it to attend to the demand of managing many resources at the same
 
 The developer has to create a description of the resources that the app has (app descriptor) and then send it to the Kubernetes master. The Kubernetes master after receiving the app descriptor will make some decisions by itself to define how to create and manage these resources. So, the solution will be deployed by the Kubernetes master based on the app descriptor. Figure 2 shows that process.
 
-![image](https://user-images.githubusercontent.com/48625700/203544070-9f27d512-6978-439f-8fa5-a6d4a7d7d02e.png)
+<p align="center">
+  <img width="750" src="https://user-images.githubusercontent.com/48625700/203544070-9f27d512-6978-439f-8fa5-a6d4a7d7d02e.png">
+</p>
 
-Figure 2 - Overview of Kubernetes process
+<p align="center">
+  Figure 2 - Overview of Kubernetes process
+</p>
 
-The Kubernetes master is composed of two main structures, the Control plane (master) and the Worker node(s). Figure 3 shows this structure.
+The Kubernetes master is composed of two main structures, the Control plane (master node) and the Worker node(s). Figure 3 shows this structure.
 
-![image](https://user-images.githubusercontent.com/48625700/203544386-1ac07bc5-b1c0-4b6b-a74c-f8f02819785d.png)
+<p align="center">
+  <img width="650" src="https://user-images.githubusercontent.com/48625700/203544386-1ac07bc5-b1c0-4b6b-a74c-f8f02819785d.png">
+</p>
 
-Figure 2 - Kubernetes master strucutre
+<p align="center">
+  Figure 3 - Kubernetes master strucutre
+</p>
 
 - Control Plane (master node)
     - API server: it is the channel between the users and the Kubernetes elements.
