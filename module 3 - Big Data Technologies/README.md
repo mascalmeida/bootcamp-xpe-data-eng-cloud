@@ -1,51 +1,51 @@
 # Annotations 📜✍️
 
-## Chapter 1 - Introduction to Spark and Data Engineering
+## Chapter 1 - Microservices Architecture: Docker
 
-### 1.1. Big Data and Data Engineering
+### 1.1. Monoliths and Microservices Architecture
 
-- Big Data Challenges:
-    1. Big Data needs to be managed, stored, and persisted;
-    2. Big Data needs to be interpreted and modeled;
-    3. There isn’t enough memory to store Big Data;
-- Distributed Computing: it works in two main ways, first partitioning the big data in smaller pieces and processing this smaller data piecing in a distributed way using many different servers (computers).
-- Distributed Computing Plataforms:
-    - Hadoop
-    - Apache Spark
-    - Apache Flink
-    - Apache Storm
+- Monolith Architecture
+    - Challenges:
+1. Slow release cycle;
+2. Updates are less frequent;
+3. The necessity to build the whole system after every update;
+4. Computing power to run the whole workload;
+5. Vertical scalability;
+- Microservices Architecture
+    - Advantages:
+1. Fast release cycle;
+2. Small and frequent updates;
+3. Exclusive update for each part of the system;
+4. Computing capacity that fits the needs of each part;
+5. Horizontal scalability;
 
-### 1.3. Introduction to Apache Spark
+### 1.2. VM vs Container
 
-- Apache Spark concept:
-    - Big Data Platform
-    - Big Data processing framework
-    - Engine to general-purpose distributed data
-    - Open-source distributed system for Big Data
-- Distributed Computing concept:
-    - Implicit parallelism
-    - Failure tolerance
-- Apache Spark features:
-    - Batch processing
-    - Streaming processing
-    - ML, Deep Learning
-    - Data Engineering and Data Science
-- Apache Spark interfaces:
-    - Python, R, Scala, SQL, Java
-    - Spark SQL package
-    - DataFrames package
-    - Streaming framework
-    - MLib for machine learning
-    - GraphX for data-viz
+![image](https://user-images.githubusercontent.com/48625700/203542477-81e79654-4f36-417c-bff5-783066f35d5b.png)
 
-### 1.5. Advantages and Disadvantages of Spark
+### 1.3. Docker: basic commands
 
-- Advantages
-    - Performance
-    - Easy to use
-    - Support for many programming languages
-    - Unified platform
-- Disadvantages
-    - Spark isn’t for small datasets (less than dozens of GB)
-    - Spark is designed for many CPUs and memory (in this case Hadoop is better)
-    - Spark isn’t for text mining (elastic search is better for this kind of thing)
+```
+# Main commands
+## docker container list
+docker ps -a
+
+## remove docker container
+docker rm <container name>
+
+## Command to search a image from docker hub (the docker repository)
+docker search <image name>
+
+## docker image list
+docker images
+
+## remove docker image
+docker rmi <image name>
+
+## build a docker image from a Dockerfile
+docker build -f <Dockerfile name> <./path>
+
+## execute a docker image
+### params: -p = port; --rm remove after stop; -d run in background; --name container name; -it run interactive;
+docker run -p <local_port:tcp_port> --rm -d --name <container name> <image name>
+```
