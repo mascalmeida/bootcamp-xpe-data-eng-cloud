@@ -4,15 +4,13 @@
 
 ### 1.1. Monoliths and Microservices Architecture
 
-- Monolith Architecture
-    - Challenges:
+- Monolith Architecture Challenges:
 1. Slow release cycle;
 2. Updates are less frequent;
 3. The necessity to build the whole system after every update;
 4. Computing power to run the whole workload;
 5. Vertical scalability;
-- Microservices Architecture
-    - Advantages:
+- Microservices Architecture Advantages:
 1. Fast release cycle;
 2. Small and frequent updates;
 3. Exclusive update for each part of the system;
@@ -21,7 +19,9 @@
 
 ### 1.2. VM vs Container
 
-![image](https://user-images.githubusercontent.com/48625700/203542477-81e79654-4f36-417c-bff5-783066f35d5b.png)
+<p align="center">
+  <img width="600" src="https://user-images.githubusercontent.com/48625700/203542477-81e79654-4f36-417c-bff5-783066f35d5b.png">
+</p>
 
 ### 1.3. Docker: basic commands
 
