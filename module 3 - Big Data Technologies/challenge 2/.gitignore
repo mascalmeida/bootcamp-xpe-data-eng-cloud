@@ -1,0 +1,4 @@
+# Avoiding versioning datasets
+data/raw/
+data/staging/
+data/analytics/
