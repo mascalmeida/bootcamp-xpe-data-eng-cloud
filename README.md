@@ -49,11 +49,12 @@ This repository contains the solutions for the challenges and case studies in **
 
 **Main concepts:**
 
-- In progress 🚧
+- Event Streaming & Streaming Process Applications
 
 **Main tools:** 
 
-- In progress 🚧
+- [Apache Kafka](https://kafka.apache.org/)
+- [Apache Pinot](https://pinot.apache.org/)
 
 ### [Module 5 - Final Challenge](https://github.com/mascalmeida/bootcamp-xpe-data-eng-cloud/tree/main/module%205%20-%20Final%20Challenge)
 
